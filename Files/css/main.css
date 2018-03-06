@@ -17,9 +17,10 @@ body{
     padding: 0;
     background-color: #264653;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
-/* Navbar styles */
+/* Header/Navbar styles */
 #nav{
     list-style-type: none;
     padding: 1em;
@@ -56,6 +57,14 @@ body{
     box-shadow: 0px 3px 10px black;
 }
 
+/* Main page content styles*/
+main{
+    margin: 7.5em 2em;
+    background-color: rgba(255,255,255,0.25);
+    padding: 2em;
+    color: #e9c46a;
+}
+
 /* Footer styles */
 #footer{
     background-color: #2a9d8f;
@@ -81,6 +90,10 @@ body{
 
 /* Responsive styles */
 @media (max-width: 992px){
+    html,
+    body{
+        font-size: 18px;
+    }
     #nav{
         font-size: 2em;
         width: 80%;
@@ -89,7 +102,19 @@ body{
         font-size: 2em;
     }
 }
-@media (max-width: 992px) and (orientation: landscape){
+
+@media (min-width: 769px) and (max-width: 1366px){
+    body,
+    html{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1366px) and (orientation: landscape){
+    body,
+    html{
+        font-size: 16px;
+    }
     #nav{
         font-size: 1em;
     }
