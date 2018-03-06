@@ -1,0 +1,21 @@
+.about-portrait > blockquote{
+    display: inline-block;
+    font-style: italic;
+    font-size: 1.25em;
+}
+.about-portrait > p{
+    font-size: 1.5em;
+    float: left;
+    width: 50%;
+    margin-left: 2em;
+}
+.portrait{
+    border-radius: 100%;
+    box-shadow: 0 0 10px 5px black,
+                0 0 0 5px #e9c46a;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-top: 1em;
+}
+
