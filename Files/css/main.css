@@ -36,6 +36,15 @@ body{
     text-decoration: none;
     color: white;
 }
+#nav > li > a.active::before{
+    content: "";
+    display: block;
+    border: 2px solid #f4a261;
+    position: relative;
+    top: 2em;
+    width: 33%;
+    margin: 0 auto;
+}
 #nav > li > a:hover{
     text-decoration: none;
 }
