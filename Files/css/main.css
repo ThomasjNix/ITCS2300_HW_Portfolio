@@ -1,0 +1,52 @@
+/*
+    Color scheme: 
+    Dark-Blue: #264653
+    Teal: #2a9d8f
+    Yellow: #e9c46a
+    Orange: #f4a261
+    Sunset: #e76f51
+*/
+
+/* Set site-wide font family*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Set page-wide styles, have fluid width */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #264653;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar styles */
+#nav{
+    list-style-type: none;
+    padding: 1em;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+#nav > li{
+    flex: 1;
+    text-align: center;
+}
+#nav > li > a{
+    text-decoration: none;
+    color: white;
+}
+#nav > li > a:hover{
+    text-decoration: none;
+}
+#navbar{
+    width: 100%;
+    background-color: #2a9d8f;
+}
+
+@media (max-width: 992px){
+    #nav{
+        font-size: 2em;
+        width: 80%;
+    }
+}
