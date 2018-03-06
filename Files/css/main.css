@@ -51,11 +51,49 @@ body{
 #navbar{
     width: 100%;
     background-color: #2a9d8f;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 3px 10px black;
 }
 
+/* Footer styles */
+#footer{
+    background-color: #2a9d8f;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -3px 10px black;
+}
+#footer p{
+    text-align: center;
+    color: white;
+}
+#footer p a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+#footer img{
+    width: 1.5em;
+    position: relative;
+    top: 0.33em;
+}
+
+/* Responsive styles */
 @media (max-width: 992px){
     #nav{
         font-size: 2em;
         width: 80%;
+    }
+    #footer p a{
+        font-size: 2em;
+    }
+}
+@media (max-width: 992px) and (orientation: landscape){
+    #nav{
+        font-size: 1em;
+    }
+    #footer p a{
+        font-size: 1em;
     }
 }
