@@ -1,21 +1,33 @@
-.about-portrait > blockquote{
-    display: inline-block;
+.biography{
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+.biography > blockquote{
     font-style: italic;
     font-size: 1.25em;
 }
-.about-portrait > p{
+.biography > p{
     font-size: 1.5em;
-    float: left;
-    width: 50%;
-    margin-left: 2em;
+}
+
+.img-container{
+    width: 100%;
 }
 .portrait{
+    display: block;
+    margin: 0 auto;
     border-radius: 100%;
     box-shadow: 0 0 10px 5px black,
                 0 0 0 5px #e9c46a;
-    float: left;
+/*    float: left;*/
     width: 250px;
     height: 250px;
     margin-top: 1em;
 }
 
+.hobbies > p,
+.skills > ul > li,
+.resume > p{
+    color: white;
+}
