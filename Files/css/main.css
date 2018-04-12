@@ -89,6 +89,8 @@ main{
     top: 0.33em;
 }
 
+/* EXTRA CREDIT - All pages are mobile responsive, and header/footer have fixed positioning for free-scrolling */
+
 /* Responsive styles */
 @media (max-width: 992px){
     html,

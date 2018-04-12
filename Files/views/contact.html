@@ -20,24 +20,94 @@
         <main>
             <h1>Contact Me</h1>
             <hr>
-            <p>Below you will find a form for contacting me directly on any inquiries.</p>
+            <h4 class="form-description">Below you will find a form for contacting me directly on any inquiries.</h4>
             
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>TODO: Contact form</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <!-- GET to / because no server-side processing -->
+            <form action="/" method="GET" class="contact-form">
+
+                <label for="nameInput">Name</label>
+                <input type="text" class="input-area" id="nameInput" placeholder="Enter your full name" required>
+
+                <label for="emailInput">Email</label>
+                <input type="email" class="input-area" id="emailInput" placeholder="Enter your email" required>
+
+                <label for="subjectInput">Subject</label>
+                <input type="text" class="input-area" id="subjectInput" placeholder="Regarding..." required>
+
+                <label for="messageContent">Message</label>
+                <textarea class="input-area" rows="5" cols="25" placeholder="Message content..." name="messageContent" id="messageContent" required></textarea>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            
+            
+            <h4 class="form-description">Please give feedback on this page!</h4>
+            <form action="/" method="GET" class="contact-form contact-form-2">
+
+                <p class="inner-description">Overall page rating</p>
+                
+                <div class="rating-selection">
+                   <div class="radio-container">
+                      <input type="radio" name="choice1" id="choice1">
+                      <label for="choice1">Poor</label>    
+                   </div>
+                   
+                   <div class="radio-container">
+                      <input type="radio" name="choice2" id="choice2">
+                      <label for="choice2">Fair</label>
+                   </div>
+                   
+                   <div class="radio-container">
+                      <input type="radio" name="choice3" id="choice3">
+                      <label for="choice3">Average</label>
+                   </div>
+                   
+                   <div class="radio-container">
+                      <input type="radio" name="choice4" id="choice4">
+                      <label for="choice4">Good</label>
+                   </div>
+                   
+                   <div class="radio-container">
+                      <input type="radio" name="choice5" id="choice5">
+                      <label for="choice5">Great</label>
+                   </div>
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                <p class="inner-description">Any other feedback is appreciated!</p>
+                
+                <div class="rating-selection">
+                   <div class="checkbox-container">
+                       <input type="checkbox" id="checkOption1">
+                       <label for="checkOption1">No issues</label>
+                   </div>
+                   <div class="checkbox-container">
+                       <input type="checkbox" id="checkOption2">
+                       <label for="checkOption2">There's some bugs</label>
+                   </div>
+                   <div class="checkbox-container">
+                       <input type="checkbox" id="checkOption3">
+                       <label for="checkOption3">Good styling</label>
+                   </div>
+                   <div class="checkbox-container">
+                       <input type="checkbox" id="checkOption4">
+                       <label for="checkOption4">Styling needs work</label>
+                   </div>
+                   <div class="checkbox-container">
+                       <input type="checkbox" id="checkOption5">
+                       <label for="checkOption5">Content needs work</label>
+                   </div>
+                
+                </div>
+                
+            
+
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
         </main>
         
        <footer id="footer">
