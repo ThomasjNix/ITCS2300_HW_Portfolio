@@ -79,3 +79,16 @@ form.contact-form > button:hover{
         width: 30px;
     }
 }
+
+.recentlySubmitted{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.recentlySubmitted > ul{
+    list-style-type: none;
+}

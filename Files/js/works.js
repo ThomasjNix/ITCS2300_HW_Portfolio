@@ -9,6 +9,9 @@ const modalTitle = document.querySelectorAll('#modal > h2');
 const modalDesc = document.querySelectorAll('#modal > p');
 const modalClose = document.querySelector('#modal > button');
 
+// Requesting extra credit for creating a pop-up modal and transferring data
+// Change of src happens automatically on click - the modal image is what is changed. Same with styling (visibility class toggling). Check below!
+// 3 mouse events: click, dblclick, hover
 const setupImageModal = function(){
     imageContents.forEach((image) => {
         image.addEventListener('click', (event) => {
@@ -24,6 +27,10 @@ const setupImageModal = function(){
     modalClose.addEventListener('click', () => {
         modal.classList.toggle('visible-modal');
     })
+    
+    modal.addEventListener('dblclick', () => {
+        modal.classList.toggle('visible-modal');
+    });
 }
 
 setupImageModal();

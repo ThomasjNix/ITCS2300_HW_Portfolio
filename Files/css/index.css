@@ -39,3 +39,9 @@
     width: 30em;
     height: 10em;
 }
+
+.highlight{
+    font-size: 1.25em;
+    color: black;
+    font-weight: bold;
+}

@@ -18,12 +18,18 @@
         </header>
         
         <main>
+           <div class="recentlySubmitted hidden-content">
+               <p>You have recently submitted form data! Find it below:</p>
+               <ul></ul>
+               
+               <p>Thank you for your input!</p>
+           </div>
             <h1>Contact Me</h1>
             <hr>
             <h4 class="form-description">Below you will find a form for contacting me directly on any inquiries.</h4>
             
             <!-- GET to / because no server-side processing -->
-            <form action="/" method="GET" class="contact-form">
+            <form class="contact-form" id="contact_form">
 
                 <label for="nameInput">Name</label>
                 <input type="text" class="input-area" id="nameInput" placeholder="Enter your full name" required>
@@ -37,12 +43,12 @@
                 <label for="messageContent">Message</label>
                 <textarea class="input-area" rows="5" cols="25" placeholder="Message content..." name="messageContent" id="messageContent" required></textarea>
 
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button class="btn btn-default" onclick="createCookie(0)">Submit</button>
             </form>
             
             
             <h4 class="form-description">Please give feedback on this page!</h4>
-            <form action="/" method="GET" class="contact-form contact-form-2">
+            <form class="contact-form contact-form-2" id="feedback_form">
 
                 <p class="inner-description">Overall page rating</p>
                 
@@ -71,11 +77,7 @@
                       <input type="radio" name="choice5" id="choice5">
                       <label for="choice5">Great</label>
                    </div>
-                    
-                    
-                    
-                    
-                    
+
                 </div>
                 
                 <p class="inner-description">Any other feedback is appreciated!</p>
@@ -106,7 +108,7 @@
                 
             
 
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button class="btn btn-default" onclick="createCookie(1)">Submit</button>
             </form>
         </main>
         
@@ -117,5 +119,7 @@
                 </a>
             </p>
         </footer>
+        
+        <script src="../js/contact.js"></script>
     </body>
 </html>

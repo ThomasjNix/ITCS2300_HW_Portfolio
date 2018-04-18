@@ -20,6 +20,10 @@ body{
     font-size: 14px;
 }
 
+.hidden-content{
+    display: none !important;
+}
+
 /* Header/Navbar styles */
 #nav{
     list-style-type: none;
