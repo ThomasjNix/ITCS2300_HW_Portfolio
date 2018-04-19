@@ -33,4 +33,5 @@ const setupImageModal = function(){
     });
 }
 
+// Invoke image modal setup
 setupImageModal();
